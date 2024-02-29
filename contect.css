@@ -1,0 +1,127 @@
+* {margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "poppins",sans-serif;   
+
+}
+
+:root {
+    --bgcolor: rgb(73, 189, 89);
+    --red: rgb(238, 9, 9);
+    --purple: purple;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/contact.jpg);
+}
+.container {
+    width: 800px;
+    background-color: white;
+    padding: 25px 40px 10px 40px ;
+    box-shadow: 0px 0px 5px black(0,0,0,0.5);
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:rgb(17, 17, 17);
+
+}
+.container form{
+    padding: 30px 0px 30px 0px;
+}
+
+.row{
+    display: flex;
+    margin: 32px 0;
+}
+.form-group{
+    width: 100%;
+    margin: 0 20px;
+    height: 40px;
+    position:relative
+
+
+}
+
+.textarea{
+    height: 70px;
+
+}
+.form-group input,
+.form-group textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 17px;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+
+}
+.form-group textarea{
+    resize: none;
+    padding-top: 10px;
+}
+.form-group label{
+    position:absolute;
+    font-size: 16px;
+    bottom: 10px;
+    pointer-events: none ;
+    transition: 0.3% ease;
+
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~label{
+    transform: translatey(-20px);
+    color: rgb(42, 132, 155);
+    font-size: 14px;
+
+}
+
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    transform: translatey(-40px);
+    color: rgb(42, 132, 155);
+    font-size:14px;
+
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(42, 132, 155);
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+
+}
+
+.form-group input:focus ~.underline,
+.form-group input:valid ~ .underline,
+.form-group textarea:focus ~ .underline,
+.form-group textarea:valid ~ .underline{
+    transform: scaleX(1);
+
+}
+
+input[type="submit"] {
+    background-color: rgb(42, 132, 155);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
