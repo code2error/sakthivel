@@ -1,0 +1,84 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.foot1 {
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 20px; 
+}
+
+.Quick-links, .navigation, .openning, .c-info {
+    color: white;
+    padding: 20px;
+    width: 250px; 
+    box-sizing: border-box; 
+}
+
+.Quick-links h5, .navigation h5, .openning h5, .c-info h5 {
+    margin-bottom: 10px;
+}
+
+.Quick-links li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.Quick-links li{
+    list-style: none;
+    padding: 10px;
+}
+.Quick-links h5{
+   
+    padding: 10px;
+}
+.navigation li{
+    list-style: none;
+    padding: 10px;
+}
+.navigation h5{
+   
+    padding: 10px;
+}
+.openning li{
+    list-style: none;
+    padding: 10px;
+}
+.openning h5{
+   
+    padding: 10px;
+}
+.c-info li{
+    list-style: none;
+    padding: 10px;
+}
+.c-info h5{
+   
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .foot1 {
+        flex-direction: column; 
+    }
+    
+    .Quick-links, .navigation, .openning, .c-info {
+        width: 100%; 
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
